@@ -1,0 +1,88 @@
+.space {
+    height: 100vh;
+    background: url('https://stepik.org/media/attachments/lesson/452681/space.png');
+}
+
+.planet {
+    position: absolute;
+    bottom: -4px;
+    z-index: 1;
+}
+
+.rocket {
+    position: relative;
+    bottom: -300px;
+    left: 450px;
+    width: 300px;
+    height: auto;
+    transform: rotate(27deg);
+}
+
+.control-panel {
+    position: relative;
+    display:inline-block;
+    padding: 0.5em 0.5em;
+    background-image: repeating-linear-gradient(45deg, #000000, #000000 10px, #fffe54 10px, #fffe54 20px);
+    text-align: center;
+    width: 25em;
+    left: 70em;
+}
+
+.control-panel__inner {
+    background-color: #242421;
+}
+
+.check-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 1rem 1rem;
+}
+
+.levers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100px;
+}
+
+.levers input{
+    transform: rotate(-90deg);
+    height: 10px;
+    width: 80px;
+}
+
+#password {
+    border-radius: 5px;
+    color: #fbfe55;
+    border: 1px solid #fbfe55;
+    background-color: #242421;
+}
+
+input[type="button"] {
+    margin: 1rem 1rem;
+    background-color: #fbfe55;
+    border: 0.1em solid black;
+    border-radius: 1em;
+}
+
+#launch {
+    height: 60px;
+    width: 100px;
+    font-size: 1.2em;
+    color: #fff;
+    border-radius: 50%;
+    border: 0.1em solid #fff;
+    background: #d32d1f;
+}
+
+#launch:disabled {
+    height: 60px;
+    width: 100px;
+    font-size: 1.2em;
+    color: #fff;
+    border-radius: 50%;
+    border: 0.1em solid #fff;
+    background: #9f1f14;
+}
